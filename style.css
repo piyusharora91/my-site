@@ -1,0 +1,417 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, grey, black);
+}
+
+main {
+    width: 100vw;
+}
+
+#navbar {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+    position: sticky;
+    top: 0;
+    background: linear-gradient(to right, grey, black);
+}
+
+.ml12 {
+    margin-left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    font-weight: 200;
+    font-size: 3em;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.ml12 .letter {
+    display: inline-block;
+    line-height: 0.7em;
+}
+
+#desktop-layout {
+    display: flex;
+    align-items: center;
+    justify-items: end;
+}
+
+.nav-links {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-decoration: none;
+    margin-right: 7vh;
+    z-index: 5;
+}
+
+
+#responsive-nav-icon {
+    display: none;
+    font-size: 50px;
+    color: rgb(117, 170, 96);
+    margin-right: 30px;
+    user-select: none;
+}
+
+.responsive-nav-links {
+    display: none;
+}
+
+#welcome-section {
+    height: 100vh;
+    width: 100%;
+    border-bottom: 2px solid white;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    user-select: none;
+}
+
+#welcome-section h1 {
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+    font-size: 60px;
+}
+
+#welcome-section p {
+    color: white;
+    font-size: 48px;
+    font-weight: 50;
+}
+
+#work-experience {
+    text-align: center;
+    padding: 50px;
+    color: white;
+    height: 100%;
+    border-bottom: 2px solid white;
+}
+
+#work-experience h1 {
+    margin-top: 0;
+    font-size: 50px;
+    user-select: none;
+}
+
+.company-name {
+    margin-top: 30px;
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#infosys h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.work-duration {
+    margin: 0;
+    font-size: 25px;
+}
+
+.work-project {
+    font-size: 25px;
+    text-align: left;
+    margin: 40px 0px 0px 24px;
+}
+
+.work-specifications {
+    text-align: left;
+    margin: 10px 0px 10px 0px;
+    font-size: 20px;
+    list-style-position: inside;
+}
+
+.work-specifications li {
+    padding: 0.4em;
+    font-size: 23px;
+}
+
+#projects {
+    height: 110%;
+    width: 100%;
+}
+
+#projects h1 {
+    color: white;
+    text-align: center;
+    font-size: 49px;
+    padding: 50px 0px 10px 0px;
+}
+
+.projects-grid {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-tile {
+    margin: 10px auto;
+    height: 370px;
+    width: 330px;
+    background: rgb(61, 59, 59);
+    border-radius: 10px;
+}
+
+.project-tile a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.project-tile img {
+    height: 300px;
+    width: 330px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.project-tile h2 {
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+#all-projects {
+    margin: 0px auto;
+    height: 30px;
+    text-align: center;
+    padding: 40px 10px 90px 10px;
+}
+
+#all-projects a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    background: rgb(61, 59, 59);
+    padding: 18px 24px 18px 24px;
+    border-radius: 5px;
+}
+
+#all-projects div {
+    display: inline-block;
+    font-size: 27px;
+}
+
+#contact {
+    height: 80vh;
+    width: 100vw;
+    background: linear-gradient(to right, rgb(46, 45, 45), rgb(28, 27, 27));
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    width: 60%;
+    text-align: center;
+}
+
+#contact p {
+    margin: 10px auto 30px auto;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 28px;
+}
+
+
+#link-container {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.profile-links {
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    margin: 40px;
+}
+
+#mail-contact {
+    width: fit-content;
+}
+
+footer {
+    width: 100%;
+    height: 5vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 4px solid rgb(88, 4, 4);
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    font-size: 180%;
+}
+
+
+
+@media screen and (max-width: 1150px) {
+    .ml12 {
+        margin-left: 70px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    #responsive-nav-icon {
+        display: flex;
+    }
+
+    .responsive-nav-links {
+        display: flex;
+        font-size: 2rem;
+        color: white;
+        text-decoration: none;
+    }
+
+    #work-experience {
+        padding: 50px 10px;
+    }
+
+
+    #work-experience h1 {
+        font-size: 40px;
+    }
+
+    .company-name {
+        margin: 30px 0px;
+        border: none;
+        padding: 0px;
+        text-align: center;
+    }
+
+    #infosys h1 {
+        font-size: 32px;
+    }
+
+    .work-duration {
+        margin-top: 10px;
+        font-size: 27px;
+    }
+
+    .work-project {
+        font-size: 29px;
+        margin: 40px 5px 5px 5px;
+        text-align: center;
+    }
+
+
+    .work-specifications {
+        padding: 0.4em 0.1em;
+        margin: 0;
+    }
+
+    .work-specifications li {
+        width: 95%;
+        list-style-position: inside;
+        text-align: justify;
+    }
+
+    #projects h1 {
+        font-size: 40px;
+    }
+
+    #contact {
+        height: 85vh;
+    }
+
+    #contact h2 {
+        font-size: 40px;
+        width: 100vw;
+    }
+
+    #contact p {
+        text-align: center;
+    }
+
+    .profile-links {
+        text-decoration: none;
+        color: white;
+        font-size: 35px;
+        margin: 10px;
+        width: max-content;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .ml12 {
+        margin-left: 20px;
+        font-size: 35px;
+    }
+
+    #responsive-nav-icon {
+        font-size: 30px;
+    }
+
+
+    .responsive-nav-links {
+        font-size: 1.3rem;
+    }
+
+    #work-experience {
+        margin-top: 40px;
+        padding: 0px;
+    }
+
+
+    .projects-grid {
+        width: 100%;
+        margin: 0px;
+    }
+
+    footer a {
+        font-size: 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 285px) {
+    .ml12 {
+        margin: auto;
+    }
+
+    #responsive-nav-icon {
+        display: none;
+    }
+
+    .project-tile {
+        width: 270px;
+        height: 100%;
+        margin-top: 20px;
+    }
+
+    .project-tile img {
+        width: 270px;
+        height: auto;
+    }
+
+    #contact {
+        padding: 40px 0px;
+    }
+}
