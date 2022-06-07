@@ -17,6 +17,8 @@ main {
     position: sticky;
     top: 0;
     background: linear-gradient(to right, grey, black);
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
 }
 
 .ml12 {
